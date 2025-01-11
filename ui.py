@@ -59,22 +59,30 @@ def search():
     results_df = lang_data.iloc[top_indices].copy()
     results_df['cosine_score'] = similarities[top_indices]
 
-    # Adjust ranking based on sentiment - we chose to have a lower impact for sentiment
-    if sentiment == 'positive':
-        results_df['final_score'] = (
-            0.7 * results_df['cosine_score'] + 0.3 * results_df['sentiment_score_lstm']
-        )
-    elif sentiment == 'negative':
-        results_df['final_score'] = (
-            0.7 * results_df['cosine_score'] + 0.3 * (1 - results_df['sentiment_score_lstm'])
-        )
+    if model == 'bert':
+        # Use BERT sentiment and exclude sentiment score from ranking
+        results_df['final_score'] = results_df['cosine_score']
 
-    # Sort results by the final score
-    results_df = results_df.sort_values(by='final_score', ascending=False).head(5)
+        sentiment_filter = 1 if sentiment == 'positive' else 0
+        results_df = results_df[results_df['sentiment_bert'] == sentiment_filter]
 
-    results = results_df[['review_id', 'product_id', 'review_body', 'review_title', 'final_score', 'cosine_score', 'sentiment_score_lstm']].to_dict(orient='records')
+        results_df = results_df.sort_values(by='final_score', ascending=False).head(5)
+        results = results_df[['review_id', 'product_id', 'review_body', 'review_title', 'final_score', 'cosine_score', 'sentiment_bert']].to_dict(orient='records')
+    else:
+        # Adjust ranking based on sentiment for LSTM - we chose to have a lower impact for sentiment
+        if sentiment == 'positive':
+            results_df['final_score'] = (
+                0.7 * results_df['cosine_score'] + 0.3 * results_df['sentiment_score_lstm']
+            )
+        elif sentiment == 'negative':
+            results_df['final_score'] = (
+                0.7 * results_df['cosine_score'] + 0.3 * (1 - results_df['sentiment_score_lstm'])
+            )
+        results_df = results_df.sort_values(by='final_score', ascending=False).head(5)
+        results = results_df[['review_id', 'product_id', 'review_body', 'review_title', 'final_score', 'cosine_score', 'sentiment_score_lstm']].to_dict(orient='records')
 
     return jsonify(results)
+
 
 if __name__ == '__main__':
     app.run(debug=True)
