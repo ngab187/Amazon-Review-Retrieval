@@ -1,0 +1,171 @@
+[
+  {
+    "query": "Smartphone",
+    "language": "de",
+    "sentiment": "positive",
+    "model": "lstm",
+    "relevant_products": ["product_de_0492681", "product_de_0844353", "product_de_0585711", "product_de_0280150"]
+  },
+  {
+    "query": "Smartphone",
+    "language": "de",
+    "sentiment": "positive",
+    "model": "bert",
+    "relevant_products": ["product_de_0492681", "product_de_0844353", "product_de_0585711", "product_de_0280150"]
+  },
+  {
+    "query": "Smartphone",
+    "language": "en",
+    "sentiment": "positive",
+    "model": "lstm",
+    "relevant_products": ["product_en_0195375"]
+  },
+  {
+    "query": "Smartphone",
+    "language": "en",
+    "sentiment": "positive",
+    "model": "bert",
+    "relevant_products": ["product_en_0195375"]
+  },
+  {
+    "query": "Smartphone",
+    "language": "de",
+    "sentiment": "negative",
+    "model": "lstm",
+    "relevant_products": ["product_de_0592379"]
+  },
+  {
+    "query": "Smartphone",
+    "language": "de",
+    "sentiment": "negative",
+    "model": "bert",
+    "relevant_products": ["product_de_0592379"]
+  },
+  {
+    "query": "Smartphone",
+    "language": "en",
+    "sentiment": "negative",
+    "model": "lstm",
+    "relevant_products": []
+  },
+  {
+    "query": "Smartphone",
+    "language": "en",
+    "sentiment": "negative",
+    "model": "bert",
+    "relevant_products": []
+  },
+  {
+    "query": "nail polish",
+    "language": "en",
+    "sentiment": "positive",
+    "model": "lstm",
+    "relevant_products": ["product_en_0189627", "product_en_0672455", "product_en_0996885", "product_en_0551553", "product_en_0605076"]
+  },
+  {
+    "query": "nail polish",
+    "language": "en",
+    "sentiment": "positive",
+    "model": "bert",
+    "relevant_products": ["product_en_0189627", "product_en_0672455", "product_en_0996885", "product_en_0551553", "product_en_0605076"]
+  },
+  {
+    "query": "Nagellack",
+    "language": "de",
+    "sentiment": "positive",
+    "model": "lstm",
+    "relevant_products": ["product_de_094342", "product_de_0551542", "product_de_0121887"]
+  },
+  {
+    "query": "Nagellack",
+    "language": "de",
+    "sentiment": "positive",
+    "model": "bert",
+    "relevant_products": ["product_de_094342", "product_de_0551542", "product_de_0121887"]
+  },
+    {
+    "query": "nail polish",
+    "language": "en",
+    "sentiment": "negative",
+    "model": "lstm",
+    "relevant_products": ["product_en_0307977", "product_en_0018336", "product_en_0621800", "product_en_0406085"]
+  },
+  {
+    "query": "nail polish",
+    "language": "en",
+    "sentiment": "negative",
+    "model": "bert",
+    "relevant_products": ["product_en_0307977", "product_en_0018336", "product_en_0621800", "product_en_0406085"]
+  },
+  {
+    "query": "Nagellack",
+    "language": "de",
+    "sentiment": "negative",
+    "model": "lstm",
+    "relevant_products": ["product_de_0551542 ", "product_de_0921161", "product_de_0962093", "product_de_0703580", "product_de_0708909"]
+  },
+  {
+    "query": "Nagellack",
+    "language": "de",
+    "sentiment": "negative",
+    "model": "bert",
+    "relevant_products": ["product_de_0551542 ", "product_de_0921161", "product_de_0962093", "product_de_0703580", "product_de_0708909"]
+  },
+
+  {
+    "query": "Föhn",
+    "language": "de",
+    "sentiment": "positive",
+    "model": "lstm",
+    "relevant_products": ["product_de_0928141", "product_de_0870614", "product_de_0691534", "product_de_0154630", "product_de_0977043"]
+  },
+  {
+    "query": "Föhn",
+    "language": "de",
+    "sentiment": "positive",
+    "model": "bert",
+    "relevant_products": ["product_de_0928141", "product_de_0870614", "product_de_0691534", "product_de_0154630", "product_de_0977043"]
+  },
+  {
+    "query": "hair dryer",
+    "language": "en",
+    "sentiment": "positive",
+    "model": "lstm",
+    "relevant_products": ["product_en_0468201", "product_en_0122536", "product_en_0201422", "product_en_0936375"]
+  },
+  {
+    "query": "hair dryer",
+    "language": "en",
+    "sentiment": "positive",
+    "model": "bert",
+    "relevant_products": ["product_en_0468201", "product_en_0122536", "product_en_0201422", "product_en_0936375"]
+  },
+  {
+    "query": "Föhn",
+    "language": "de",
+    "sentiment": "negative",
+    "model": "lstm",
+    "relevant_products": ["product_de_0434603", "product_de_0711179", "product_de_0217103", "product_de_0616308"]
+  },
+  {
+    "query": "Föhn",
+    "language": "de",
+    "sentiment": "negative",
+    "model": "bert",
+    "relevant_products": ["product_de_0434603", "product_de_0711179", "product_de_0217103", "product_de_0616308"]
+  },
+  {
+    "query": "hair dryer",
+    "language": "en",
+    "sentiment": "negative",
+    "model": "lstm",
+    "relevant_products": ["product_en_0394293", "product_en_0501907", "product_en_0130933", "product_en_0301689"]
+  },
+  {
+    "query": "hair dryer",
+    "language": "en",
+    "sentiment": "negative",
+    "model": "bert",
+    "relevant_products": ["product_en_0394293", "product_en_0501907", "product_en_0130933", "product_en_0301689"]
+  }
+]
